@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+
+<body style="background-color:white">
+    <div id='root'></div>
+</body>
+
+<script async defer type='text/jsx' src='static/pages/app.jsx'>
+</script>
+
+{% endblock %}
