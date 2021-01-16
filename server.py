@@ -16,15 +16,6 @@ def index(path):
     """Show homepage."""
 
     return render_template("index.html")
-
-@app.route('/api/check_session')
-def check_session():
-    if session.get('logged_in_user_id',None):
-        print('_________________________________________________________________________',session)
-        return jsonify({'session':True})
-    else:
-        print('_________________________________________________________________________',None)
-        return jsonify({'session':False})
     
 
 if __name__ == "__main__":
