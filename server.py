@@ -7,7 +7,7 @@ import os
 # from model import connect_to_db, db, Bear
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = os.environ['SECRET_KEY']
+app.config["SECRET_KEY"] = 'vu4wu06wu06'
 # app.jinja_env.undefined = StrictUndefined
 
 @app.route('/', defaults={'path': ''})
